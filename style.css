@@ -691,7 +691,7 @@ header {
 
 .services-page .car-slide-img { background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url("luxury-car.png"); }
 .services-page .bus-slide-img { background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url("bus.png"); }
-.services-page .traveller-slide-img { background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url(".traveller.png"); }
+.services-page .traveller-slide-img { background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url("traveller.png"); }
 
 .services-page .services-slide-card {
   background: rgba(255, 255, 255, 0.96);
