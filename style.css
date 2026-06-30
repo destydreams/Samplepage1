@@ -39,14 +39,15 @@ header {
 }
 
 .logo {
-  width: 100%;
-  height: 100%;
-  background-image: url("desty-dream-logo.png"); /* Fixed case and removed leading dot */
+  width: 200px;         /* Fixed width */
+  height: 200px;        /* Fixed height */
+  background-color: red; /* If you see a red square, the code works, but path is wrong */
+  background-image: url("desty-dream-logo.png"); 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  transition: 0.4s ease;
 }
+
 
 
 .logo:hover {
