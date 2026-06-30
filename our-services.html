@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Desty Dreams</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="services-page">
+
+  <header>
+    <div class="navbar">
+      <div class="nav-logo"><div class="logo"></div></div>
+      <nav class="vertical-menu">
+        <a href="index.html">Home</a>
+        <a href="our-services.html" class="active">Our Services</a>
+        <a href="get-pricing.html">Get Pricing</a>
+        <a href="customer-support.html">Customer Support</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="video-container">
+      <video autoplay muted loop playsinline>
+        <source src="./images/our-services.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Welcome To Desty Dreams</h1>
+      <p>Luxury Travel & Premium Vehicle Rentals Our Services </p>
+      
+    </div>
+  </section>
+
+  <hr class="blink-line">
+
+  <section class="travelling-services">
+    <h2>We Provide Best Travelling Services</h2>
+    <p>
+      We provide reliable and comfortable travel services designed to make every journey smooth and memorable. 
+      From luxury buses and comfortable car rentals to train travel assistance and tour transportation, 
+      we ensure safe, affordable, and hassle-free travel experiences for every customer.
+    </p>
+  </section>
+
+  <hr class="custom-line">
+
+  <section class="traveller-showcase">
+    <h2>Why Should You Choose Us?</h2>
+    <p class="showcase-subtitle">Discover comfort, safety, luxury, and reliability with our premium travel services.</p>
+    
+    <div class="showcase-slider">
+      <div class="showcase-slide driver-slide">
+        <div class="slide-content">
+          <h3>Professional Drivers</h3>
+          <p>Our trained and experienced drivers ensure a safe, comfortable, and worry-free travel experience.</p>
+        </div>
+      </div>
+      <div class="showcase-slide travel-slide">
+        <div class="slide-content">
+          <h3>Travel Focused Journey</h3>
+          <p>Every trip is carefully planned to provide smooth, enjoyable, and memorable journeys.</p>
+        </div>
+      </div>
+      <div class="showcase-slide clean-slide">
+        <div class="slide-content">
+          <h3>Simple & Clean</h3>
+          <p>Clean interiors, sanitized vehicles, and organized travel arrangements for maximum comfort.</p>
+        </div>
+      </div>
+      <div class="showcase-slide premium-slide">
+        <div class="slide-content">
+          <h3>Premium Style Vehicles</h3>
+          <p>Travel in luxury with modern amenities, spacious seating, and premium interiors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="custom-line">
+
+  <section class="services-fleet-slider-section">
+    <div class="section-title">
+      <h2>Our Premium Fleet</h2>
+      <p>Select your preferred luxury vehicle category and reserve your journey instantly.</p>
+    </div>
+
+    <div class="services-slider-container">
+      <div class="services-slides">
+        
+        <div class="services-slide active" data-vehicle="Luxury Car">
+          <div class="services-slide-bg car-slide-img"></div>
+          <div class="services-slide-card">
+            <h3>Luxury Cars</h3>
+            <span class="seats-badge"><i class="fa-solid fa-chair"></i> Seats: 4 | 6 | 7</span>
+            <p>Experience premium business-class elegance, pristine climate-controlled seating, and exceptional suspension comfort designed for urban executives or boutique family events.</p>
+            <button class="services-book-btn" onclick="bookVehicle(this)"><i class="fab fa-whatsapp"></i> Book Luxury Car Now</button>
+          </div>
+        </div>
+
+        <div class="services-slide" data-vehicle="Premium Bus">
+          <div class="services-slide-bg bus-slide-img"></div>
+          <div class="services-slide-card">
+            <h3>Premium Buses</h3>
+            <span class="seats-badge"><i class="fa-solid fa-chair"></i> Seats: 37 | 45 | 49</span>
+            <p>Spacious long-haul coaches featuring state-of-the-art entertainment setups, immense luggage storage facilities, and certified commercial operators for large-scale tourism operations.</p>
+            <button class="services-book-btn" onclick="bookVehicle(this)"><i class="fab fa-whatsapp"></i> Book Premium Bus Now</button>
+          </div>
+        </div>
+
+        <div class="services-slide" data-vehicle="Mini Traveller">
+          <div class="services-slide-bg traveller-slide-img"></div>
+          <div class="services-slide-card">
+            <h3>Mini Travellers</h3>
+            <span class="seats-badge"><i class="fa-solid fa-chair"></i> Seats: 13 | 17 | 20 | 26</span>
+            <p>The perfect mid-tier transit solution matching spacious luxury aisles with optimal micro-destination maneuvering capabilities. Ideal for outstation family trips.</p>
+            <button class="services-book-btn" onclick="bookVehicle(this)"><i class="fab fa-whatsapp"></i> Book Mini Traveller Now</button>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="services-slider-arrow prev-arrow" aria-label="Previous Slide">&#10094;</button>
+      <button class="services-slider-arrow next-arrow" aria-label="Next Slide">&#10095;</button>
+      
+    </div>
+  </section>
+
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Desty Dreams</h3>
+        <p>Providing premium vehicle rentals and luxury travel experiences with comfort and trust.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="our-services.html">Services</a></li>
+          <li><a href="get-pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: info@destydreams.com</li>
+          <li>Phone: +91 9766319540</li>
+          <li>Location: Ambernath, Mumbai</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Subscribe for latest travel offers.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Desty Dreams. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sSlides = document.querySelectorAll(".services-slide");
+      const sNextBtn = document.querySelector(".next-arrow");
+      const sPrevBtn = document.querySelector(".prev-arrow");
+      let sCurrentSlide = 0;
+      let sSliderInterval;
+
+      function updateServicesSlide(index) {
+        sSlides.forEach(slide => slide.classList.remove("active"));
+        sSlides[index].classList.add("active");
+      }
+
+      function nextServicesSlide() {
+        sCurrentSlide = (sCurrentSlide + 1) % sSlides.length;
+        updateServicesSlide(sCurrentSlide);
+      }
+
+      function prevServicesSlide() {
+        sCurrentSlide = (sCurrentSlide - 1 + sSlides.length) % sSlides.length;
+        updateServicesSlide(sCurrentSlide);
+      }
+
+      // 5-Second Auto Rotation Control Set
+      function startServicesAutoplay() {
+        sSliderInterval = setInterval(nextServicesSlide, 5000);
+      }
+
+      function resetServicesAutoplay() {
+        clearInterval(sSliderInterval);
+        startServicesAutoplay();
+      }
+
+      // Event Interception Loops
+      sNextBtn.addEventListener("click", () => {
+        nextServicesSlide();
+        resetServicesAutoplay();
+      });
+
+      sPrevBtn.addEventListener("click", () => {
+        prevServicesSlide();
+        resetServicesAutoplay();
+      });
+
+      // Initialize System Clock
+      startServicesAutoplay();
+    });
+
+    // Smart Pre-filled Vehicle Routing WhatsApp Link Generation Function
+    function bookVehicle(buttonElement) {
+      const slideParent = buttonElement.closest(".services-slide");
+      const selectedVehicle = slideParent.getAttribute("data-vehicle");
+      
+      const whatsappNumber = "919766319540";
+      
+      // Dynamic payload structured like the pricing sheet engine setup
+      const message = `Hello Desty Dreams,\n\nI am exploring services directly from your website and want to check details regarding operations:\n\n*Selected Fleet Preference:* ${selectedVehicle}\n\nPlease help me provide specific custom package rates and availability timelines regarding this operation!`;
+      
+      // Format cross-origin redirect cleanly
+      const encodedUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+      window.open(encodedUrl, '_blank');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Pricing | Desty Dreams</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="pricing-page">
+
+  <header>
+    <div class="navbar">
+      <div class="nav-logo"><div class="logo"></div></div>
+      <nav class="vertical-menu">
+        <a href="index.html">Home</a>
+        <a href="our-services.html">Our Services</a>
+        <a href="get-pricing.html" class="active">Get Pricing</a>
+        <a href="customer-support.html">Customer Support</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="video-container">
+      <video autoplay muted loop playsinline>
+        <source src="./images/get-pricing.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Welcome To Desty Dreams</h1>
+      <p>Luxury Travel & Premium Vehicle Rentals</p>
+      <p>Get Pricing</p>
+    </div>
+  </section>
+
+  <hr class="blink-line">
+
+  <section class="fleet-section">
+    <h2>Plan Your Budget Friendly Tour With Us</h2>
+  </section>
+
+  <section class="quote-section">
+    <div class="quote-card">
+      <h1>Get a Quote</h1>
+      <p class="call-text">Call us on <span>+91 8048794985</span></p>
+
+      <div class="trip-tabs">
+        <button type="button" class="active">Round Trip</button>
+        <button type="button">One Way</button>
+      </div>
+
+      <form id="quoteForm" class="quote-form">
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="Enter Your Name" required>
+        </div>
+        <div class="input-group">
+          <label>Mobile Number</label>
+          <input type="tel" id="mobile" placeholder="Enter Mobile Number" required>
+        </div>
+        <div class="input-group">
+          <label>From</label>
+          <input type="text" id="from" placeholder="Enter Pickup Location" required>
+        </div>
+        <div class="input-group">
+          <label>To</label>
+          <input type="text" id="to" placeholder="Enter Destination" required>
+        </div>
+
+        <div class="date-row">
+          <div class="input-group">
+            <label>Start Date</label>
+            <input type="date" id="startDate" required>
+          </div>
+          <div class="input-group">
+            <label>Return Date</label>
+            <input type="date" id="returnDate">
+          </div>
+        </div>
+
+        <!-- Dropdown menu updated with exact string names -->
+        <div class="input-group">
+          <label>Vehicle Option</label>
+          <select id="vehicleCategory" required style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc; background: #fff; margin-bottom: 15px;">
+            <option value="" disabled selected>Select Vehicle Type</option>
+            <option value="Car">Car</option>
+            <option value="Traveller">Traveller</option>
+            <option value="Bus">Bus</option>
+          </select>
+        </div>
+
+        <div class="radio-box">
+          <label><input type="radio" name="vehicleType" value="AC" checked> AC</label>
+          <label><input type="radio" name="vehicleType" value="Non AC"> Non AC</label>
+        </div>
+
+        <div class="terms">
+          <input type="checkbox" id="agree" required>
+          <span>I agree to Terms & Conditions</span>
+        </div>
+
+        <button type="submit" class="proceed-btn">Proceed on WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <hr class="custom-line">
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Desty Dreams</h3>
+        <p>Providing premium vehicle rentals and luxury travel experiences with comfort and trust.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="our-services.html">Services</a></li>
+          <li><a href="get-pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: info@destydreams.com</li>
+          <li>Phone: +91 9766319540</li>
+          <li>Location: Ambernath, Mumbai</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Subscribe for latest travel offers.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Desty Dreams. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const today = new Date();
+      const formattedToday = today.toISOString().split('T')[0];
+      const startInput = document.getElementById("startDate");
+      const returnInput = document.getElementById("returnDate");
+
+      // Prevent past dates on load
+      startInput.min = formattedToday;
+      returnInput.min = formattedToday;
+
+      // Handle custom alignment when start date is modified
+      startInput.addEventListener("change", () => {
+        if (startInput.value) {
+          const startDateObj = new Date(startInput.value);
+          
+          // Shift date forward by exactly 1 day
+          startDateObj.setDate(startDateObj.getDate() + 1);
+          const nextDayFormatted = startDateObj.toISOString().split('T')[0];
+          
+          // Lock out same-day and prior selections in calendar picker
+          returnInput.min = nextDayFormatted;
+          
+          // Instantly wipe existing input if it conflicts with the new rule
+          if (returnInput.value && returnInput.value <= startInput.value) {
+            returnInput.value = "";
+          }
+        } else {
+          returnInput.min = formattedToday;
+        }
+      });
+
+      document.getElementById("quoteForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        
+        const name = document.getElementById("name").value;
+        const mobile = document.getElementById("mobile").value;
+        const from = document.getElementById("from").value;
+        const to = document.getElementById("to").value;
+        const startDate = startInput.value;
+        const returnDate = returnInput.value;
+        const vehicleCategory = document.getElementById("vehicleCategory").value;
+        const vehicleType = document.querySelector('input[name="vehicleType"]:checked').value;
+
+        if(!mobile.match(/^\d{10}$/)) {
+          alert("Please enter a valid 10-digit mobile number.");
+          return;
+        }
+
+        // Catch edge cases if users manually alter input states
+        if (returnDate && returnDate <= startDate) {
+          alert("Return date must be strictly after the start date.");
+          return;
+        }
+
+        const message = `Hello Desty Dreams,\n\nNew Travel Quote Request\n\nCustomer Name: ${name}\nMobile Number: ${mobile}\nPickup Location: ${from}\nDestination: ${to}\nStart Date: ${startDate}\nReturn Date: ${returnDate ? returnDate : "One Way"}\nVehicle Selected: ${vehicleCategory} (${vehicleType})`;
+        
+        window.open(`https://wa.me/919766319540?text=${encodeURIComponent(message)}`, '_blank');
+      });
+    });
+  </script>
+</body>
+</html>
