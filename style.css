@@ -297,9 +297,9 @@ header {
   border-radius: 20px;
 }
 
-.home-page .car-bg { background-image: url("./images/luxury-car.png"); }
-.home-page .bus-bg { background-image: url("./images/Bus.png"); }
-.home-page .traveller-bg { background-image: url("./images/Traveller.png"); }
+.home-page .car-bg { background-image: url("luxury-car.png"); }
+.home-page .bus-bg { background-image: url("bus.png"); }
+.home-page .traveller-bg { background-image: url("traveller.png"); }
 
 
 .home-page .slide-content {
