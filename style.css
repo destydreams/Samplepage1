@@ -592,7 +592,7 @@ header {
 .services-page .driver-slide { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.75)), url("drivers.png"); }
 .services-page .travel-slide { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.75)), url("travel-road.jpg"); }
 .services-page .clean-slide { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.75)), url("clean.png"); }
-.services-page .premium-slide { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.75)), url("luxury_bus.jpg"); }
+.services-page .premium-slide { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.75)), url("luxury-bus.jpg"); }
 
 .services-page .showcase-slide .slide-content {
   position: absolute;
