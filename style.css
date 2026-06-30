@@ -39,14 +39,15 @@ header {
 }
 
 .logo {
-  width: 200px;         /* Fixed width */
-  height: 200px;        /* Fixed height */
-  background-color: red; /* If you see a red square, the code works, but path is wrong */
-  background-image: url("desty-dream-logo.png"); 
+  width: 100%;
+  height: 100%;
+  background-image: url("desty-dream-logo.png"); /* Fixed case and removed leading dot */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  transition: 0.4s ease;
 }
+
 
 
 
@@ -588,10 +589,10 @@ header {
   transform: translateY(-8px);
 }
 
-.services-page .driver-slide { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.75)), url("./images/drivers.png"); }
-.services-page .travel-slide { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.75)), url("./images/travel-road.jpg"); }
-.services-page .clean-slide { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.75)), url("./images/clean.png"); }
-.services-page .premium-slide { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.75)), url("./images/luxury_bus.jpg"); }
+.services-page .driver-slide { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.75)), url("drivers.png"); }
+.services-page .travel-slide { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.75)), url("travel-road.jpg"); }
+.services-page .clean-slide { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.75)), url("clean.png"); }
+.services-page .premium-slide { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.75)), url("luxury_bus.jpg"); }
 
 .services-page .showcase-slide .slide-content {
   position: absolute;
