@@ -16,6 +16,41 @@ body {
   min-height: 100vh;
 }
 
+/* Base styling for all links in your vertical menu (assuming your current setup) */
+.vertical-menu a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333; /* Dark text for regular links */
+  transition: all 0.3s ease;
+}
+
+/* Specific styling for the Call Now button */
+.vertical-menu .call-btn {
+  background-color: #007bff; /* Sharp blue color (change to match your theme) */
+  color: #ffffff !important; /* Forces text to stay white */
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px; /* Smooth rounded corners */
+  margin: 15px 10px 5px 10px; /* Adds space around the button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle lift effect */
+}
+
+/* Hover effect - makes the button change color when mouse rolls over it */
+.vertical-menu .call-btn:hover {
+  background-color: #0056b3; /* Slightly darker blue on hover */
+  transform: translateY(-1px); /* Slight lift animation */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Active click effect - gives feedback when pressed */
+.vertical-menu .call-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styling for the Call Now button */
+
 /* ==========================================================================
    2. SHARED LAYOUT COMPONENTS (Header, Navbar, Footer, Dividers)
    ========================================================================== */
